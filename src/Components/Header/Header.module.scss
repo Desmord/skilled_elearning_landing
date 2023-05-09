@@ -8,7 +8,7 @@
     padding-top: 39px;
 
     img {
-        width: 111px;
+        width: 114px;
         aspect-ratio: 1 / 0.25;
         margin-left: 11.5%;
     }
@@ -28,6 +28,32 @@
         &:hover {
             cursor: pointer;
             background-color: $color-light-blue;
+        }
+    }
+}
+
+@media all and (max-width:768px) {
+    .container {
+        img {
+            width: 89px;
+            margin-left: 10%;
+        }
+
+        .getStarted {
+            width: 140px;
+            margin-right: 10%;
+        }
+    }
+}
+
+@media all and (max-width:375px) {
+    .container {
+        img {
+            margin-left: 8.5%;
+        }
+
+        .getStarted {
+            margin-right: 8.5%;
         }
     }
 }
