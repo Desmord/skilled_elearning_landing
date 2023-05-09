@@ -32,9 +32,9 @@ $color-dark-blue:hsl(233, 54%, 16%);
 $color-grey:hsl(232, 10%, 56%);
 $color-pink:hsl(341, 92%, 62%);
 $color-light-pink:hsl(341, 100%, 83%);
-$color-white:hsl(0, 0%, 0%);
-$gradient-orange-to-pink:linear-gradient(to bottom, hsl(322, 87%, 55%), hsl(13, 100%, 64%));
-$gradient-blue-to-pink:linear-gradient(to bottom, hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+$color-white:hsl(0, 0%, 100%);
+$gradient-orange-to-pink:linear-gradient(to top, hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+$gradient-blue-to-pink:linear-gradient(to top, hsl(237, 100%, 64%), hsl(322, 87%, 55%));
 
 @mixin HeadingXL {
     font-size: 56px;
