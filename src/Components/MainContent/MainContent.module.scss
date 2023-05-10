@@ -89,17 +89,10 @@
         row-gap: 44px;
 
         .cell:first-of-type {
-            // height: 120px;
             @include HeadingS;
             padding:28px;
             height: auto;
             width: 343px;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            // text-align: center;
-            // width: fit-content;
-            // height: 283px;
         }
 
     }

@@ -35,6 +35,8 @@ $color-light-pink:hsl(341, 100%, 83%);
 $color-white:hsl(0, 0%, 100%);
 $gradient-orange-to-pink:linear-gradient(to top, hsl(322, 87%, 55%), hsl(13, 100%, 64%));
 $gradient-blue-to-pink:linear-gradient(to top, hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+$gradient-pink-to-blue:linear-gradient(to top, hsl(322, 87%, 55%), hsl(237, 100%, 64%));
+$gradient-light-pink-to-blue:linear-gradient(to top, hsl(322, 87%, 65%), hsl(237, 100%, 74%));
 
 @mixin HeadingXL {
     font-size: 56px;
