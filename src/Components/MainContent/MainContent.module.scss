@@ -1,0 +1,106 @@
+@import '../../global.scss';
+
+.container {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 47px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    column-gap: 30px;
+    row-gap: 80px;
+
+    .cell {
+        position: relative;
+        width: 350px;
+        height: 322px;
+        border-radius: 15px;
+        background-color: $color-white;
+
+        img {
+            position: absolute;
+            width: 56px;
+            aspect-ratio: 1;
+            left: 32px;
+            top: -21px;
+        }
+
+        div {
+            padding: 0px 32px;
+        }
+
+        .title {
+            @include HeadingS;
+            padding-top: 64px;
+        }
+
+        .text {
+            @include BodyM;
+            color: $color-grey;
+            padding-top: 24px;
+        }
+
+        .getStarted {
+            @include BodyM;
+            color: $color-pink;
+            padding-top: 24px;
+            font-weight: 800;
+            transition: all 0.3s ease;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .cell:first-of-type {
+        @include HeadingM;
+        padding: 64px 37px;
+        color: $color-white;
+        background: $gradient-orange-to-pink;
+    }
+
+    .background {
+        position: absolute;
+        width: 100vw;
+        height: calc(100% + 140px);
+        background: linear-gradient(to bottom, $color-white, #F0F1FF);
+        opacity: 1;
+        z-index: -1;
+    }
+}
+
+@media all and (max-width:1124px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+
+        .cell {
+            width: 339px;
+            height: 283px;
+        }
+    }
+}
+
+@media all and (max-width:784px) {
+    .container {
+        grid-template-columns: 1fr;
+        row-gap: 44px;
+
+        .cell:first-of-type {
+            // height: 120px;
+            @include HeadingS;
+            padding:28px;
+            height: auto;
+            width: 343px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // text-align: center;
+            // width: fit-content;
+            // height: 283px;
+        }
+
+    }
+}
